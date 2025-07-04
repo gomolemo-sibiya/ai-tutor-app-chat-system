@@ -1,0 +1,74 @@
+[
+  {
+    "chatId": "1",
+    "timestamp": "2025-06-20T14:00:00.000Z",
+    "studentId": "3",
+    "queryType": "module",
+    "module": "CS101",
+    "title": "CS101 Programming Questions",
+    "notes": "",
+    "messages": [
+      {
+        "sender": "student",
+        "text": "Can you explain variables in programming?",
+        "timestamp": "2025-06-20T14:00:00.000Z"
+      },
+      {
+        "sender": "system",
+        "text": "Variables are containers for storing data values. In programming, a variable is a name given to a memory location where data can be stored and retrieved.",
+        "timestamp": "2025-06-20T14:00:30.000Z"
+      }
+    ]
+  },
+  {
+    "chatId": "2",
+    "timestamp": "2025-06-20T15:00:00.000Z",
+    "studentId": "3",
+    "queryType": "general",
+    "module": "",
+    "title": "Study Tips Discussion",
+    "notes": "",
+    "messages": [
+      {
+        "sender": "student",
+        "text": "What are some effective study strategies?",
+        "timestamp": "2025-06-20T15:00:00.000Z"
+      },
+      {
+        "sender": "system",
+        "text": "Here are some effective study strategies: 1) Active recall through practice questions, 2) Spaced repetition, 3) Teaching concepts to others, 4) Creating mind maps, 5) Taking regular breaks.",
+        "timestamp": "2025-06-20T15:00:30.000Z"
+      }
+    ]
+  },
+  {
+    "chatId": "1750774765834",
+    "timestamp": "2025-06-24T14:19:25.834Z",
+    "studentId": "3",
+    "queryType": "general",
+    "module": "",
+    "title": "Test Chat - 16:19:25",
+    "notes": "AWS API Test Chat",
+    "messages": []
+  },
+  {
+    "chatId": "1750807977482",
+    "timestamp": "2025-06-24T23:32:57.482Z",
+    "studentId": "3",
+    "queryType": "general",
+    "module": "",
+    "title": "Test Chat - 01:32:57",
+    "notes": "AWS API Test Chat",
+    "messages": []
+  },
+  {
+    "chatId": "1750810239536",
+    "timestamp": "2025-06-25T00:10:39.536Z",
+    "studentId": "3",
+    "queryType": "general",
+    "module": "",
+    "title": "Test Chat - 02:10:39",
+    "notes": "AWS API Test Chat",
+    "messages": []
+  }
+]

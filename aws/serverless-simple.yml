@@ -1,0 +1,60 @@
+service: ai-tutor-simple
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-2
+  stage: dev
+  environment:
+    CHATS_TABLE: ${self:service}-chats-${self:provider.stage}
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - dynamodb:Query
+            - dynamodb:Scan
+            - dynamodb:GetItem
+            - dynamodb:PutItem
+            - dynamodb:UpdateItem
+            - dynamodb:DeleteItem
+          Resource:
+            - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:provider.environment.CHATS_TABLE}"
+            - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:provider.environment.CHATS_TABLE}/index/*"
+
+functions:
+  getChats:
+    handler: src/handlers/chat.getChats
+    events:
+      - http:
+          path: /chat
+          method: get
+          cors: true
+
+resources:
+  Resources:
+    ChatsTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ${self:provider.environment.CHATS_TABLE}
+        AttributeDefinitions:
+          - AttributeName: chatId
+            AttributeType: S
+          - AttributeName: studentId
+            AttributeType: S
+        KeySchema:
+          - AttributeName: chatId
+            KeyType: HASH
+        GlobalSecondaryIndexes:
+          - IndexName: StudentIdIndex
+            KeySchema:
+              - AttributeName: studentId
+                KeyType: HASH
+            Projection:
+              ProjectionType: ALL
+        BillingMode: PAY_PER_REQUEST
+
+plugins:
+  - serverless-offline
