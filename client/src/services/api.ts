@@ -1,10 +1,10 @@
 import axios from 'axios';
 import type { ChatHistory } from '../types';
 
-const API_BASE = '/api';
+const API_BASE_URL = '/api';
+
 const apiClient = axios.create({
-  baseURL: API_BASE,
-  timeout: 10000,
+  baseURL: API_BASE_URL,
   headers: {
     'Content-Type': 'application/json',
   },
@@ -21,3 +21,5 @@ export const chatService = {
     apiClient.put<ChatHistory>(`/chat/${chatId}`, updates),
   deleteChat: (chatId: string) => apiClient.delete(`/chat/${chatId}`),
 };
+
+export default apiClient;

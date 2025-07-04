@@ -17,27 +17,26 @@
         "sender": "system",
         "text": "Variables are containers for storing data values. In programming, a variable is a name given to a memory location where data can be stored and retrieved.",
         "timestamp": "2025-06-20T14:00:30.000Z"
-      }
-    ]
-  },
-  {
-    "chatId": "2",
-    "timestamp": "2025-06-20T15:00:00.000Z",
-    "studentId": "3",
-    "queryType": "general",
-    "module": "",
-    "title": "Study Tips Discussion",
-    "notes": "",
-    "messages": [
+      },
       {
         "sender": "student",
-        "text": "What are some effective study strategies?",
-        "timestamp": "2025-06-20T15:00:00.000Z"
+        "text": "hi",
+        "timestamp": "2025-07-04T13:02:22.886Z"
       },
       {
         "sender": "system",
-        "text": "Here are some effective study strategies: 1) Active recall through practice questions, 2) Spaced repetition, 3) Teaching concepts to others, 4) Creating mind maps, 5) Taking regular breaks.",
-        "timestamp": "2025-06-20T15:00:30.000Z"
+        "text": "I apologize, but I'm having trouble responding right now. Please try again later.",
+        "timestamp": "2025-07-04T13:02:22.896Z"
+      },
+      {
+        "sender": "student",
+        "text": "Hi",
+        "timestamp": "2025-07-04T13:15:37.638Z"
+      },
+      {
+        "sender": "system",
+        "text": "I apologize, but I'm having trouble responding right now. Please try again later.",
+        "timestamp": "2025-07-04T13:15:37.655Z"
       }
     ]
   },
@@ -70,5 +69,26 @@
     "title": "Test Chat - 02:10:39",
     "notes": "AWS API Test Chat",
     "messages": []
+  },
+  {
+    "chatId": "1751634168560",
+    "timestamp": "2025-07-04T13:02:48.560Z",
+    "studentId": "3",
+    "queryType": "general",
+    "module": "",
+    "title": "General Chat - 15:02:48",
+    "notes": "",
+    "messages": [
+      {
+        "sender": "student",
+        "text": "Crreate",
+        "timestamp": "2025-07-04T13:02:55.709Z"
+      },
+      {
+        "sender": "system",
+        "text": "I apologize, but I'm having trouble responding right now. Please try again later.",
+        "timestamp": "2025-07-04T13:02:55.718Z"
+      }
+    ]
   }
 ]
